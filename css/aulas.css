@@ -1,0 +1,484 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7; /* Aumentado para melhor legibilidade */
+    color: #333;
+    background-color: #f8f9fa; /* Um cinza muito claro, quase branco */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50; /* Azul escuro */
+    margin-bottom: 15px;
+    font-weight: 600; /* Um pouco mais encorpado */
+}
+
+h1 {
+    font-size: 2.8em; /* Um pouco maior */
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 15px;
+    font-weight: 300; /* Mais leve para o corpo do texto */
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Azul vibrante */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Azul mais escuro no hover */
+    text-decoration: none; /* Remove sublinhado no hover também */
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* --- Cabeçalho (Header) --- */
+header {
+    background-color: #2c3e50; /* Azul escuro */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* Sombra mais suave e proeminente */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2.2em; /* Ligeiramente maior */
+}
+
+header nav ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    margin-left: 25px; /* Mais espaçamento */
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 15px; /* Mais padding */
+    border-radius: 6px; /* Bordas mais suaves */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Mais opaco no hover */
+    transform: translateY(-2px); /* Efeito de levantar */
+}
+
+/* --- Seções Principais --- */
+section {
+    padding: 80px 0; /* Mais padding nas seções */
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Gradiente azul */
+    color: #fff;
+    padding: 100px 0; /* Mais padding */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3); /* Sombra mais forte no texto */
+}
+
+.hero-section h2 {
+    color: #fff;
+    font-size: 3.5em; /* Aumentado */
+    margin-bottom: 25px;
+    font-weight: 700; /* Mais encorpado */
+}
+
+.hero-section p {
+    font-size: 1.2em; /* Um pouco maior */
+    max-width: 900px; /* Largura máxima para o texto */
+    margin: 0 auto 20px auto;
+    font-weight: 300;
+}
+
+/* Featured Lesson Section (Por Onde Começar) */
+.featured-lesson-section {
+    background-color: #fff;
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.featured-lesson-section h3 {
+    color: #e67e22; /* Laranja */
+    font-weight: 700;
+}
+
+.featured-lesson-section ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 25px; /* Mais espaçamento */
+    list-style: none; /* Remover bolinhas padrão */
+}
+
+.featured-lesson-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    position: relative;
+    padding-left: 25px; /* Espaço para o ícone customizado */
+}
+
+.featured-lesson-section ul li::before {
+    content: '✓'; /* Ícone de checkmark */
+    color: #27ae60; /* Verde */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Botão Global */
+.button {
+    display: inline-block;
+    background-color: #27ae60; /* Verde */
+    color: #fff;
+    padding: 18px 35px; /* Mais padding */
+    border-radius: 8px;
+    font-size: 1.2em; /* Um pouco maior */
+    font-weight: 700; /* Mais encorpado */
+    margin-top: 40px; /* Mais espaçamento */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra mais suave e proeminente */
+}
+
+.button:hover {
+    background-color: #229a55;
+    transform: translateY(-3px); /* Levanta um pouco mais */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra maior no hover */
+}
+
+/* Why Learn Section (Por Que Aprender) */
+.why-learn-section {
+    background-color: #ecf0f1; /* Cinza claro */
+    padding: 80px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px; /* Mais espaçamento */
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 35px; /* Mais padding */
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra mais suave */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee; /* Borda sutil */
+}
+
+.feature-item:hover {
+    transform: translateY(-8px); /* Levanta mais */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra mais proeminente no hover */
+}
+
+.feature-item h4 {
+    color: #34495e; /* Azul acinzentado */
+    margin-bottom: 12px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.feature-item p {
+    font-weight: 300;
+    font-size: 0.95em;
+}
+
+/* Next Steps Section (O Que Vem a Seguir) */
+.next-steps-section {
+    background-color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+.next-steps-section ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+    list-style: none; /* Remover bolinhas padrão */
+}
+
+.next-steps-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    position: relative;
+    padding-left: 25px; /* Espaço para o ícone customizado */
+}
+
+.next-steps-section ul li::before {
+    content: '•'; /* Ícone de bolinha customizado */
+    color: #3498db; /* Azul */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* --- Rodapé (Footer) --- */
+footer {
+    background-color: #34495e; /* Azul acinzentado escuro */
+    color: #ecf0f1;
+    padding: 40px 0; /* Mais padding */
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+/* --- Estilos para as Seções de Aulas e Quizzes (Adicione ao style.css) --- */
+.lesson-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra mais proeminente para o bloco de conteúdo */
+    text-align: left; /* Alinha o texto das lições à esquerda */
+}
+
+.lesson-section h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título da lição */
+}
+
+.lesson-section p, .lesson-section ul li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.lesson-section ul {
+    margin-left: 20px;
+    list-style: disc; /* Voltar para bolinhas padrão em lições */
+}
+
+/* Estilo para blocos de código */
+pre {
+    background-color: #282c34; /* Fundo escuro para código */
+    color: #abb2bf; /* Cor do texto do código */
+    padding: 15px 20px;
+    border-radius: 8px;
+    overflow-x: auto; /* Permite rolar em linhas longas */
+    margin: 20px 0;
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: left;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    background-color: #e9ecef; /* Cor clara para código inline */
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #c0392b; /* Cor de destaque para código inline */
+}
+
+
+/* Estilos para o Quiz (melhorados) */
+.quiz-section {
+    background-color: #eaf4f7; /* Um azul/verde muito claro */
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.quiz-section h4 {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    color: #34495e;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Mais espaçamento entre botões */
+    margin-bottom: 20px;
+    align-items: center; /* Centraliza os botões */
+}
+
+.option {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #dcdcdc; /* Borda mais suave */
+    padding: 15px 20px; /* Mais padding */
+    border-radius: 8px; /* Bordas mais suaves */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%; /* Ocupa a largura total */
+    max-width: 600px; /* Limita a largura máxima do botão */
+    font-size: 1.05em;
+    text-align: left; /* Alinha o texto do botão à esquerda */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra sutil */
+}
+
+.option:not([disabled]):hover { /* Só hover se não estiver desabilitado */
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.option.correct {
+    background-color: #2ecc71; /* Verde */
+    color: #fff;
+    border-color: #27ae60;
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3); /* Sombra verde */
+}
+
+.option.incorrect {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+    border-color: #c0392b;
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3); /* Sombra vermelha */
+}
+
+/* Estilos para botões desabilitados após clique */
+.option[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.option[disabled]:not(.correct):not(.incorrect) {
+    background-color: #f0f0f0; /* Um pouco mais escuro para mostrar que está desabilitado */
+    color: #777;
+}
+
+
+.feedback {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.feedback.correct-text {
+    color: #27ae60; /* Verde mais escuro */
+}
+
+.feedback.incorrect-text {
+    color: #c0392b; /* Vermelho mais escuro */
+}
+
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Para os itens do menu ocuparem a largura total */
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        width: 100%;
+    }
+    header nav ul li a {
+        display: block; /* Para o link ocupar todo o espaço do li */
+        text-align: center;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5em;
+    }
+
+    .button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-section, .quiz-section {
+        margin: 20px 10px; /* Margem ajustada em telas menores */
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .option {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+}
