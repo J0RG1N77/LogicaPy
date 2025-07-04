@@ -1,6 +1,6 @@
 # LogicaPy
 
-LogicaPy: Aprenda Lógica de Programação e Python de Forma Gratuita e Interativa 🐍
+LogicaPy: Aprenda Lógica de Programação e Python de Forma Gratuita e Interativa
 Um projeto educacional open source desenvolvido para iniciantes no mundo da programação. O LogicaPy oferece aulas interativas de lógica de programação usando a linguagem Python de maneira simples e didática.
 
 Funcionalidades:
@@ -20,3 +20,6 @@ HTML: Estrutura das páginas.
 CSS: Estilização e design responsivo.
 
 JavaScript: Lógica de interatividade dos quizzes.
+
+
+Criado por um estudante para estudantes.
