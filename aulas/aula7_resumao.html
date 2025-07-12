@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicaPy - Aula 7: Resumão - Desafio Final!</title>
+    <link rel="stylesheet" href="../css/aulas.css">
+    <link rel="shortcut icon" href="../assets/logicapylogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">LogicaPy</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#comecar">Início</a></li>
+                    <li><a href="aula6_listas.html">Aula Anterior</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="aula-conteudo">
+            <div class="container">
+                <h2>Aula 7: Resumão - Desafio Final! 🧠</h2>
+                <p>Parabéns por chegar até aqui! 🎉 Esta aula é um desafio para você testar tudo o que aprendeu sobre:</p>
+                <ul>
+                    <li><strong>Variáveis</strong></li>
+                    <li><strong>Tipos de Dados</strong> (Números, Strings, Booleanos)</li>
+                    <li><strong>Operadores</strong> (Aritméticos, Comparação, Lógicos)</li>
+                    <li><strong>Condicionais</strong> (<code>if</code>, <code>elif</code>, <code>else</code>)</li>
+                    <li><strong>Laços de Repetição</strong> (<code>for</code>, <code>while</code>, <code>break</code>, <code>continue</code>)</li>
+                    <li><strong>Listas e Tuplas</strong></li>
+                </ul>
+                <p>Responda aos quizzes a seguir para ver o quão bem você dominou os conceitos. Boa sorte!</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Após o código <code>nome = "Alice"<br>nome = "Bob"</code>, qual o valor da variável <code>nome</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">Alice</button>
+                    <button class="option" data-correct="true">Bob</button>
+                    <button class="option" data-correct="false">AliceBob</button>
+                    <button class="option" data-correct="false">Erro</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual será o valor de <code>resultado</code> após: <code>x = 7<br>y = 2<br>resultado = (x + y) * 2</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">16</button>
+                    <button class="option" data-correct="true">18</button>
+                    <button class="option" data-correct="false">14</button>
+                    <button class="option" data-correct="false">9</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Se <code>idade = 15</code>, qual será a saída do código?<br><code>if idade >= 18:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Pode entrar")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Aguarde")</code></h4>
+                <div class="options">
+                    <button class="option" data-correct="false">Pode entrar</button>
+                    <button class="option" data-correct="true">Aguarde</button>
+                    <button class="option" data-correct="false">Erro</button>
+                    <button class="option" data-correct="false">Nenhuma saída</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual o resultado de <code>(10 > 5) and (3 < 2)</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">True</button>
+                    <button class="option" data-correct="true">False</button>
+                    <button class="option" data-correct="false">Erro</button>
+                    <button class="option" data-correct="false">10</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Quantas vezes a palavra "Olá" será impressa pelo código?<br><code>for i in range(3):<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Olá")</code></h4>
+                <div class="options">
+                    <button class="option" data-correct="false">0</button>
+                    <button class="option" data-correct="false">2</button>
+                    <button class="option" data-correct="true">3</button>
+                    <button class="option" data-correct="false">4</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual será o último número impresso por este código?<br><code>cont = 0<br>while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(cont)<br>&nbsp;&nbsp;&nbsp;&nbsp;cont += 1<br>&nbsp;&nbsp;&nbsp;&nbsp;if cont == 4:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</code></h4>
+                <div class="options">
+                    <button class="option" data-correct="false">3</button>
+                    <button class="option" data-correct="true">4</button>
+                    <button class="option" data-correct="false">5</button>
+                    <button class="option" data-correct="false">Loop Infinito</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual o conteúdo final da lista `frutas`?<br><code>frutas = ["maçã", "uva", "kiwi"]<br>frutas[1] = "banana"<br>frutas.append("pera")</code></h4>
+                <div class="options">
+                    <button class="option" data-correct="false">["maçã", "uva", "kiwi", "pera"]</button>
+                    <button class="option" data-correct="false">["banana", "uva", "kiwi", "pera"]</button>
+                    <button class="option" data-correct="true">["maçã", "banana", "kiwi", "pera"]</button>
+                    <button class="option" data-correct="false">["maçã", "banana", "pera"]</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Se <code>dados = ("altura", 1.70)</code>, qual a principal característica que impede <code>dados[0] = "peso"</code> de funcionar?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">O tipo de dados não pode ser misturado.</button>
+                    <button class="option" data-correct="false">É uma sintaxe incorreta para tuplas.</button>
+                    <button class="option" data-correct="true">Tuplas são imutáveis.</button>
+                    <button class="option" data-correct="false">A tupla só aceita números.</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="navigation-section">
+            <div class="container">
+                <a href="aula6_listas.html" class="button">&#8592; Aula Anterior: Listas e Tuplas</a>
+                <a href="../index.html" id="fim-do-resumao" class="button">Voltar para o Início do LogicaPy 🎉</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LogicaPy. Todos os direitos reservados.</p>
+            <p><strong>Criado por um estudante para estudantes.</strong></p>
+        </div>
+    </footer>
+    <script src="../js/aulas.js"></script> </body>
+</html>

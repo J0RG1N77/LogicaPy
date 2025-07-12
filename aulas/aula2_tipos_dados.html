@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicaPy - Aula 2: Tipos de Dados, Expressões e Números</title>
+    <link rel="stylesheet" href="../css/aulas.css">
+    <link rel="shortcut icon" href="../assets/logicapylogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">LogicaPy</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#comecar">Início</a></li>
+                    <li><a href="aula1_variaveis.html">Aula Anterior</a></li>
+                    <li><a href="aula3_condicionais.html">Próxima Aula</a></li> </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="aula-conteudo">
+            <div class="container">
+                <h2>Aula 2: Tipos de Dados, Expressões e Números</h2>
+                <p>Na aula anterior, aprendemos que variáveis são como "caixas" para guardar informações. Mas que tipo de informações podemos guardar? É aí que entram os <strong>Tipos de Dados</strong>!</p>
+
+                <h3>O que são Tipos de Dados?</h3>
+                <p>Assim como no mundo real temos diferentes tipos de objetos (números, palavras, imagens, sons), na programação, as informações também são classificadas em tipos. Um <strong>Tipo de Dado</strong> define a natureza do valor que uma variável pode armazenar e as operações que podem ser realizadas com ele.</p>
+                <p>Em Python, por ser uma linguagem de tipagem dinâmica, você não precisa declarar o tipo explicitamente, mas é fundamental entender que o tipo existe e afeta como o Python trata a informação. Os tipos de dados mais comuns que veremos agora são os numéricos e os de texto (string).</p>
+
+                <h3>Números em Python</h3>
+                <p>Python lida muito bem com números e oferece dois tipos numéricos principais para começar:</p>
+                <ul>
+                    <li><strong>Inteiros (<code>int</code>):</strong> São números positivos ou negativos sem casas decimais.
+                        <pre><code>idade = 30
+quantidade = -5
+ano = 2024</code></pre>
+                    </li>
+                    <li><strong>Ponto Flutuante (<code>float</code>):</strong> São números que possuem casas decimais. Eles são usados para representar valores mais precisos.
+                        <pre><code>preco = 19.99
+altura = 1.75
+temperatura = -3.5</code></pre>
+                    </li>
+                </ul>
+                <p>Python consegue automaticamente identificar se um número é um <code>int</code> ou um <code>float</code> pela presença (ou ausência) do ponto decimal.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual o tipo de dado da variável `saldo = 1500.75` em Python?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">int</button>
+                    <button class="option" data-correct="true">float</button>
+                    <button class="option" data-correct="false">string</button>
+                    <button class="option" data-correct="false">boolean</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="aula-conteudo">
+            <div class="container">
+                <h3>Expressões Numéricas: Operadores Aritméticos</h3>
+                <p>Agora que sabemos guardar números, como fazemos cálculos com eles? Usamos <strong>operadores aritméticos</strong> para criar <strong>expressões</strong>. Uma expressão é uma combinação de valores (números, variáveis) e operadores que o Python pode "calcular" para produzir um novo valor.</p>
+                <p>Os operadores aritméticos mais comuns em Python são:</p>
+                <ul>
+                    <li><strong><code>+</code></strong> : Adição (soma)</li>
+                    <li><strong><code>-</code></strong> : Subtração</li>
+                    <li><strong><code>*</code></strong> : Multiplicação</li>
+                    <li><strong><code>/</code></strong> : Divisão (sempre retorna um <code>float</code>)</li>
+                    <li><strong><code>%</code></strong> : Módulo (retorna o resto da divisão)</li>
+                    <li><strong><code>**</code></strong> : Exponenciação (potência)</li>
+                    <li><strong><code>//</code></strong> : Divisão Inteira (retorna a parte inteira da divisão)</li>
+                </ul>
+                <pre><code># Exemplos de expressões:
+resultado_soma = 10 + 5    # resultado_soma será 15
+resultado_sub = 20 - 7     # resultado_sub será 13
+resultado_mult = 4 * 6     # resultado_mult será 24
+resultado_div = 10 / 3     # resultado_div será 3.333... (float)
+resto_div = 10 % 3       # resto_div será 1 (10 dividido por 3 é 3 com resto 1)
+potencia = 2 ** 3        # potencia será 8 (2 elevado a 3)
+div_inteira = 10 // 3    # div_inteira será 3 (parte inteira da divisão)
+
+# Você também pode usar variáveis em expressões:
+preco_unitario = 5.50
+quantidade = 3
+total = preco_unitario * quantidade # total será 16.50
+</code></pre>
+                <p>A ordem de precedência dos operadores é a mesma da matemática (parênteses primeiro, depois potências, multiplicação/divisão, e por fim adição/subtração).</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual será o valor da variável `x` após a execução do código Python: <br><code>x = 5 + 2 * 3</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">21</button>
+                    <button class="option" data-correct="true">11</button>
+                    <button class="option" data-correct="false">17</button>
+                    <button class="option" data-correct="false">7</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual será a saída do seguinte código Python: <br><code>print(17 // 5)</code> e <code>print(17 % 5)</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">2 e 3</button>
+                    <button class="option" data-correct="false">3.4 e 2</button>
+                    <button class="option" data-correct="true">3 e 2</button> 
+                    <button class="option" data-correct="false">3.4 e 0.4</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+        <section class="aula-conteudo">
+            <div class="container">
+                <h3>Strings (Textos) em Python</h3>
+                <p>Além de números, a maioria dos programas lida com texto. Em programação, sequências de caracteres (letras, números, símbolos) são chamadas de <strong>strings</strong> (do inglês, "cadeias de caracteres").</p>
+                <p>Em Python, você define uma string colocando o texto entre aspas simples (<code>' '</code>) ou aspas duplas (<code>" "</code>).</p>
+                <ul>
+                    <li><strong><code>str</code>:</strong> Representa texto.
+                        <pre><code>nome = "Alice"
+mensagem = 'Bem-vindo ao Python!'
+letra = "A" # Até um único caractere é uma string</code></pre>
+                    </li>
+                </ul>
+                <p>Você pode usar aspas simples ou duplas, o importante é começar e terminar com o mesmo tipo de aspas.</p>
+
+                <h3>Concatenação de Strings</h3>
+                <p>Um operador muito comum com strings é o <strong><code>+</code></strong>, que serve para "juntar" ou "concatenar" strings. Diferente dos números, onde o <code>+</code> soma, com strings ele une o texto.</p>
+                <pre><code>saudacao = "Olá, "
+nome_aluno = "Maria"
+boas_vindas = saudacao + nome_aluno + "!" # boas_vindas será "Olá, Maria!"
+
+print(boas_vindas)
+</code></pre>
+                <p>É importante lembrar que você só pode concatenar strings com outras strings. Tentar somar um número diretamente com uma string causará um erro em Python, a menos que você converta o número para string primeiro.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <h4>Qual será a saída do código Python: <br><code>primeiro_nome = "Ana"<br>sobrenome = "Silva"<br>nome_completo = primeiro_nome + " " + sobrenome<br>print(nome_completo)</code>?</h4>
+                <div class="options">
+                    <button class="option" data-correct="false">AnaSilva</button>
+                    <button class="option" data-correct="true">Ana Silva</button>
+                    <button class="option" data-correct="false">Ana + Silva</button>
+                    <button class="option" data-correct="false">Erro</button>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </section>
+
+
+        <section class="navigation-section">
+            <div class="container">
+                <a href="aula1_variaveis.html" class="button">&#8592; Aula Anterior: Variáveis</a>
+                <a href="aula3_condicionais.html" id="proxima-aula" class="button">Próxima Aula: Condicionais &#8594;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LogicaPy. Todos os direitos reservados.</p>
+            <p>Criado por um estudante para estudantes.</p>
+        </div>
+    </footer>
+    <script src="../js/aulas.js"></script> </body>
+</html>
