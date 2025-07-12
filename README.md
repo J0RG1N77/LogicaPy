@@ -1,4 +1,5 @@
-#LogicaPy: Aprenda Lógica de Programação e Python de Forma Gratuita e Interativa 🐍
+LogicaPy: Aprenda Lógica de Programação e Python de Forma Gratuita e Interativa 🐍
+
 💡 Sobre o Projeto
 O LogicaPy é um projeto educacional web criado para desmistificar a programação e servir como um ponto de partida sólido para iniciantes no mundo da tecnologia. Focado na lógica de programação e na linguagem Python, o site oferece um ambiente de aprendizado interativo e totalmente gratuito.
 
@@ -41,4 +42,4 @@ O LogicaPy está hospedado e acessível publicamente:
 
 Acesse o LogicaPy Online: http://logicapy.s3-website-us-east-1.amazonaws.com/aulas/aula3_condicionais.html
 
-Observação: O site está hospedado diretamente no Amazon S3, utilizando HTTP. Futuramente, será configurado para HTTPS através do Amazon CloudFront para garantir uma conexão segura e otimizada.
+Observação: O site está hospedado diretamente no Amazon S3, utilizando HTTP.
