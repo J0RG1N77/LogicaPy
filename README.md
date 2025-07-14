@@ -40,6 +40,6 @@ Python: Linguagem foco do conteúdo das aulas (não utilizada no desenvolvimento
 🌐 Como Acessar o Site
 O LogicaPy está hospedado e acessível publicamente:
 
-Acesse o LogicaPy Online: http://logicapy.s3-website-us-east-1.amazonaws.com/aulas/aula3_condicionais.html
+Acesse o LogicaPy Online: http://logicapy.s3-website-us-east-1.amazonaws.com/
 
 Observação: O site está hospedado diretamente no Amazon S3, utilizando HTTP.
